@@ -1,0 +1,564 @@
+text,start,duration
+"Google wants to help you hide your IP
+address when you're surfing the internet,",0.12,3.06
+"how they're baking in proxies into their
+Chrome browser. That's kind of weird,",3.75,3.45
+"a little crazy. Actually. Chrome is
+calling it their IP protection feature,",7.26,3.33
+"and it involves running their own proxy,",10.68,1.71
+"which they're calling the
+privacy proxy private.",12.395,2.605
+"As long as Google doesn't
+look at your stuff,",15.0,1.74
+"we'll talk about that
+here in a bit. In fact,",16.95,1.59
+"it's actually pretty easy to run your
+own proxy. I'll show you how to do that.",18.81,3.12
+"Check the timestamps. It'll take
+about two minutes. But first,",22.08,2.94
+"let's talk about proxies. They're great
+and they've been around for a long time,",25.02,3.48
+"helping people hide their IP address
+and maintain a bit of privacy.",28.62,2.94
+"But what is it? How does it
+work? When you visit a website,",31.95,2.76
+"that website can see your IP address,
+which can tell them a lot about you.",34.83,3.66
+According to Google's own document.,38.76,1.41
+"Your IP address makes it feasible to
+associate what you're doing with where",40.17,3.57
+"you've been. And why that's
+dangerous is over time,",43.74,2.49
+"all the information can be combined to
+create a unique persistent profile about",46.56,4.56
+"you, and they can use that to
+track your activity across the web.",51.12,3.12
+"And unlike cookies, which we can
+opt out of IP address tracking,",54.39,3.03
+"it's more covert. You can't just
+opt out. It just kind of happens.",57.42,3.54
+So this is why people use proxies.,60.99,1.74
+"A proxy is just a server that sits in
+the middle of the communication between",62.76,3.42
+you and the website.,66.185,1.615
+"The proxy server will handle
+the communication between
+you and that website,",68.04,3.63
+"and instead of the website
+seeing your IP address,",71.7,2.13
+"it'll see the proxy server's
+IP address, hiding yours,",73.86,3.0
+"preventing it from tracking you,
+learning you, knowing you, using you,",77.07,3.39
+and all that other creepy stuff.,80.67,1.11
+"It's kind of like when you're
+in a fight with your friend Bob,",82.23,1.86
+"and you'll want to tell him something,
+but you can't. You're mad at him, right?",84.24,2.64
+"So you tell your friend
+Stacey to tell him,",87.06,1.59
+"and then he tells your friend Stacey
+to tell you, yada, yada, yada.",88.95,3.18
+"Stacey's a proxy. That's
+what I was trying to say.",92.31,2.46
+"You can also use a proxy to travel
+the world. You want to be in France,",95.01,3.09
+"put your proxy in France, and
+suddenly you're French or Stacey is.",98.28,4.5
+"And because websites only see Stacey,",102.9,1.53
+"they think you're French and
+you can access everything.",104.76,2.31
+"The French internet has to
+offer all that geoblock content.",107.07,3.27
+"But don't get too excited. Google isn't
+going to allow this with their proxy,",110.58,3.15
+"but you can certainly do it with your
+own. Again, I'll show you how. Now,",114.0,2.94
+"if you've seen enough VPN sponsored ads
+on YouTube, you're probably thinking,",116.94,3.03
+"isn't this just AVPN? Are we
+talking about the same thing? No.",120.27,3.96
+"While sharing similar goals,",124.53,1.35
+"the main difference between AVPN and a
+proxy is AVPN will actually encrypt your",125.91,4.14
+"data over a secure tunnel. While
+a proxy won't encrypt anything,",130.05,3.42
+"they'll just forward it over not
+changing anything about your data.",133.47,2.97
+"And because the proxy isn't
+worried about encrypting your data,",136.56,2.46
+"it's typically much faster. Encryption
+takes time. It's a bit heavier.",139.35,3.09
+"So when you think proxies think fast,",142.44,1.89
+"and when you're thinking
+about hosting your own server,",144.39,2.1
+"hosting a proxy server is much less
+resource intensive versus hosting a VP n",146.67,4.02
+"server, which again
+has to encrypt traffic.",150.69,2.13
+"But when we're talking about hiding your
+IP address, they both help you. Now,",152.85,3.09
+let's talk about Google running a proxy.,155.94,2.04
+"Have you ever heard of a
+man in the middle attack?",158.49,1.77
+"It's a hacking technique where a hacker
+will sit himself in the middle between",160.44,4.05
+"you and the website
+you're trying to visit,",164.49,1.74
+"and he tries to steal your information.
+He sees everything going back and forth.",166.59,4.05
+He can observe it and possibly take it.,170.76,2.1
+"It sounds kind of like what
+Google's about to do, right?",172.905,2.325
+"They're putting themselves in the
+middle of our traffic and they have the",175.26,2.91
+potential to.,178.17,0.7
+"See everything. Now, I'm not
+saying Google is going to do that.",178.87,2.7
+"I'm just saying the potential is created
+by doing that. And let's be honest,",181.63,3.81
+"does Google really need to do that?
+They already see all of our traffic,",185.47,3.33
+"but to put us at ease,
+according to the document,",188.8,1.98
+"one of the core requirements of their
+privacy prox is that the proxy will not be",190.81,3.12
+"privy to the contents of the
+traffic. So they're like,",193.93,3.06
+"we're not going to look at it. Trust
+us. You know what I mean? And again,",197.02,3.18
+"this does open up a ton of concerns,
+some that even Google recognizes.",200.2,3.21
+"They're like, Hey, yeah, about
+that right here. The first concern,",203.41,3.51
+"and this is a pretty big one,",206.92,1.05
+"is what if the proxy server owned by
+Google that has all of our stuff going",208.24,4.11
+"through it? What if it gets hacked?
+Think about it. If you're a hacker,",212.35,2.67
+"suddenly you don't need to try and hack
+thousands, millions of individuals.",215.17,4.11
+"All you got to do is hack one
+of Google's proxy servers,",219.37,2.1
+"and you get all that information
+potentially. Another one
+is denial of service.",221.5,4.41
+"What if the hacker doesn't
+want to steal the information?",225.94,1.92
+They just want to watch the world burn.,227.86,1.35
+"So they will try to take down these
+Google proxies through a DDoS attacker",229.33,4.53
+distributed denial of service attack.,233.86,1.59
+"And if everyone's using these proxies
+to go to the internet and access",235.54,3.87
+"everything, that impacts stability
+of the entire internet. Now, sure,",239.41,3.99
+"someone like me, and maybe you could
+figure it out and be like, yeah,",243.4,3.3
+"that's because of that Google proxy.
+Let's just not use it for now.",246.76,2.73
+"Other people won't realize
+that and they'll think, oh,",249.58,2.13
+"I guess the internet died.
+You know what I mean?",251.71,2.4
+"It's that single point of failure
+mentality. You don't want that.",254.14,3.18
+"And then also going through Google Proxies
+could disrupt a lot of the defenses",257.41,3.96
+that we already have for online attacks.,261.46,2.25
+"Google will effectively be changing the
+way the internet works by having a lot",263.74,4.23
+"of people go through its proxies.
+I won't go deep into that,",267.97,2.46
+"but just know it will change things.
+So to mitigate those concerns,",270.43,3.36
+"they will require
+authentication to their proxy,",273.85,2.13
+"which will require a Google account
+in which off tokens will be issued and",276.13,3.75
+redeemed at the proxy.,279.88,1.26
+"They'll also be using blinded signatures
+so they can't identify your traffic and",281.23,3.75
+"tie it to who you are.
+And to limit DDoS attacks,",284.98,2.61
+"they'll be rate limiting tokens per
+account and having token expiry.",287.59,4.17
+"I like saying the word
+expiry makes me feel British.",291.82,2.22
+"And then one more thing here. This is
+actually kind of cool. So good job Google,",294.25,3.33
+"and they are promising they're going
+to do it. It's in their roadmap,",297.58,2.85
+"but they're considering,",300.46,1.17
+"I hope it's more than a consideration
+using two hops for improved privacy.",302.08,3.96
+"So right now,",306.22,0.39
+"the proposed plan would be a Google
+owned proxy that we would all go through.",306.61,3.87
+"Again, our concerns, see
+the concerns from earlier.",310.66,2.25
+"They're talking about adding
+an extra hop, another proxy.",313.33,3.3
+"So I'll have two total proxies
+between us and our website.",316.66,2.34
+"And the second proxy will be run
+by someone else that's not Google,",319.09,2.91
+"ACDN or a content delivery network.
+Maybe CloudFlare or Akamai.",322.06,4.14
+"Google will still run the first hop,",326.32,1.86
+"but the second will be
+someone else ensuring that
+neither proxy can see both the",328.39,4.14
+client IP address and the destination.,332.53,2.07
+"Which is funny because this kind
+of sounds like the Onion Network,",334.63,3.24
+"the Tor network, the dark web,",337.87,1.29
+"and how they obscure our identities and
+keep people anonymous through multiple",339.16,3.45
+"hops, onion relays.",342.76,1.2
+"So I think this actually could be
+pretty cool as long as they take their",344.08,2.37
+"consideration into action. We'll
+see. And then as I mentioned earlier,",346.45,3.54
+"GOIP,",350.32,1.14
+"one of the benefits of a proxy is that
+we can appear to be from anywhere in the",351.64,2.94
+"world on the internet, which is
+pretty cool. Now it's Google's proxy.",354.58,3.16
+"They're going to have to comply with
+local laws and regulation that have to do",357.86,3.45
+with content localization.,361.31,1.32
+"So the privacy proxy will assign IP
+addresses that represent the user's",362.66,4.65
+"course location or I guess approximate
+location, including their country.",367.37,3.57
+"And they do have a document on
+their IP approach for IP protection.",371.15,3.15
+"Here's what the map will
+look like, so I do get it.",374.42,2.19
+"They do need to comply with laws, all
+the more reason to use your own proxy.",376.61,3.09
+"So when can we expect to see
+this? How's it going to work?",379.73,2.43
+"When will the world drastically
+change? With proxies,",382.22,2.37
+"it's going to be a slow
+rollout, a phase approach.",384.62,2.04
+"Initially it'll be opt-in only,",386.72,1.71
+"so you'll have to actually turn the
+setting on yourself. And in phase zero,",388.64,3.3
+"it'll be one single Google own proxy,",391.94,2.04
+"and it will only proxy requests
+to Google owned domains.",394.22,3.24
+"The test will only be
+US-based IP addresses,",397.52,2.31
+"and only a small percentage of clients
+will be automatically enrolled into the",399.89,3.3
+"initial test. And again,",403.19,1.2
+"part of their security features is that
+a user must be logged in to Chrome in",404.39,4.11
+"order to generate that user token
+to authenticate with a proxy.",408.5,3.06
+"So currently in Google Chrome,
+we are in, we're in one 18,",411.77,4.11
+"and we can expect to see this start
+happening between M one 19 and M 1 25,",416.24,4.92
+"and there's the flag name for that
+particular setting. When it comes out.",421.55,3.57
+"Be looking for that. Honestly,",425.12,1.56
+"I'm kind of excited about this because
+Google is helping out with privacy.",426.68,3.48
+"For most people,",430.16,1.26
+"it's a good step because most people
+are not going to run their own proxy,",431.48,3.69
+"but you're not like most people, you are
+going to run your own proxy right now.",435.5,3.78
+"It's so crazy, so fast, let's do
+it. And come on. I mean, honestly,",439.34,3.66
+"wouldn't you rather own your own
+proxy versus Google doing it for you?",443.0,4.02
+"I want to own my own privacy,",447.08,1.2
+"and I'm actually going to show
+you two ways to run a proxy.",448.4,2.22
+"The first one is ridiculously easy. It's
+always been there right next to you.",450.62,3.99
+"And the second one is more robust. It
+actually kind of operates like AVPN.",454.67,3.6
+"It's a proxy, but it will also encrypt
+your traffic. It's called Shadow Socks,",458.27,3.99
+"which kind of sounds like a superhero
+cat. I'm down for that. For both options,",462.32,3.66
+"all you'll need is a Linux-based
+server. It doesn't even have to be big.",465.98,2.88
+"It can be super tiny.
+And for my Linux server,",468.86,1.95
+"because I want to be
+anywhere in the world,",470.81,1.92
+"I'm going to spend mine up in the
+cloud with Anode by Akamai. Now,",472.76,2.7
+"as you can see, I do run a ton
+of anode servers in the cloud.",475.46,2.79
+"I use 'em for all my projects.
+Anyways, let's create one real quick.",478.25,2.7
+"I'm going to run the latest version
+of Ubuntu that they offer and region.",481.16,3.3
+"This is where it gets fun. Where am I
+going to be today? I want to be in Osaka.",484.46,3.63
+"I'm actually going to Japan in about
+three weeks. Two weeks for a month.",488.15,3.42
+So I'm practicing. So I'll be in Osaka.,491.57,1.44
+"I'll do the shared TPU and the smallest
+plan. They have just five bucks a month.",493.07,3.42
+"I'll name it Japan Proxy, put a
+password in and click on Create.",496.55,3.48
+"And within moments, I'll have my very
+own proxy server. The cloud in Japan,",500.035,4.075
+"my Linux server is done brewing. I'm going
+to go ahead and access it real quick.",504.17,3.0
+"Going to grab my SSH command, copy that.
+Launch my terminal here in Windows.",507.175,4.165
+"It'll be the same in Mac and
+Linux. Paste that in, hit enter,",511.37,2.91
+"accept all fingerprints. And we're in.
+Now, this is going to blow your mind.",514.34,3.18
+"One of the best ways to run a
+proxy is just through having SSH.",517.58,3.3
+"So what I just used to access the server,
+SSH or Secure Shell is the same thing.",520.94,4.05
+"We'll use to set up a proxy.
+And when I say set up,",524.99,2.19
+"I mean like it's done as long
+as you have open SSH installed,",527.18,4.23
+"which if you access your server that
+way, it already is just to make sure,",531.53,3.09
+"we'll try it out. APT
+install, open SSH dash server.",534.625,4.595
+"See, mine's already installed. All
+you got to do is enter that command,",539.46,2.37
+"see if it is. If it isn't,
+install it. We're good to go.",541.86,2.16
+"Now that's all I have to do. I'm just
+going to set up my clients, my computers.",544.08,3.84
+"So phone and computers, I dunno why
+I said that. I'll start with Windows.",548.07,4.17
+"And here in Windows, I do recommend
+using Firefox with a proxy,",552.27,3.18
+"mainly because I could not get
+it to work with anything else.",555.45,2.28
+"So launching Firefox, let's just do
+a little test real quick. Let's do a,",557.76,3.48
+"what's my IP address? Now,",561.24,3.15
+"I'm not going to let you see it because
+my editor's going to blur it out,",564.45,2.37
+"right Nick, but looking at
+what is my IP address.com,",566.82,2.85
+"you can clearly see that I am in
+Dallas, Texas. What do you say?",569.67,2.91
+We changed that.,572.58,0.63
+"Now our first step in setting up this
+proxy is establishing an SSH tunnel.",573.21,3.21
+"So all we're going to do, it
+sounds scary, but it's not.",576.42,1.62
+"We're going to launch our
+terminal here in Windows.",578.04,1.65
+"So we'll use the SSH command.
+I told you it's all SSH,",579.69,2.4
+"and we'll do the option dash or
+tick D, and we'll type in a port.",582.15,3.24
+"We'll just do 1, 3, 3 7. What
+this is doing is powerful.",585.395,3.445
+"It's opening up a SOX proxy, a
+proxy protocol. That is awesome.",588.87,3.96
+"It'll do T-C-P-U-D-P, whatever you
+want. We'll then do a dash capital N,",592.83,4.14
+"which is telling it to not execute remote
+commands. We're just forwarding ports.",597.03,3.18
+"And then we'll do a dash capital C to
+compress the data over our tunnel to save",600.21,3.81
+"bandwidth. And then finally, our proxy
+server. Now getting back to Lynn node,",604.02,3.12
+"I'm going to grab my IP address of my
+proxy server, and I'll say my username,",607.17,3.3
+"which is root at my proxy server. Now,
+let's go ahead and do this. Ready, set,",610.47,3.93
+"go, hit enter, accept all
+fingerprints. Put your password in,",614.4,2.79
+"and you're probably waiting like,
+okay, now what? Yeah, it's done.",617.4,3.36
+"The tunnel's created. It's open.
+And with the tunnel created,",620.88,2.4
+"now we're going to just tell our
+computer to use itself as a proxy. What?",623.28,3.9
+"Let me show you. So here in Firefox,
+I'm going to go to settings.",627.33,3.51
+"Let's go in my little dialogue here
+and go to settings and I'll search for",630.87,2.91
+"proxy. There it is. Just click on
+proxy settings and network settings.",633.78,3.06
+"And here I'm going to click
+on manual proxy configuration.",636.93,2.79
+"And all I'm going to worry
+about is the SOX host.",639.75,2.4
+"That's what we're running right now.
+There I'm going to type in local hosts,",642.21,2.67
+"which means we're going to look
+at ourselves for the proxy,",644.91,2.25
+"and we're going to tell the port
+that we just used 1, 3, 3 7.",647.19,3.27
+"So we created the tunnel
+to our proxy server,",650.49,1.74
+"and now we're telling our browser to use
+ourselves and go over that tunnel for",652.23,4.2
+"internet. It'll make sense. Watch
+this. I'll click okay. And that's it.",656.43,4.05
+"That's all we had to do. So now
+over here on what's my IP address?",660.48,3.96
+"If I refresh this, we are
+in Japan. Do you see that?",664.47,4.38
+"If I go to Google, I bet it'll put things
+in Japanese for me. Yep. Look at that.",668.94,4.95
+"I am loving this. See, I just
+traveled across the world.",673.95,2.43
+"And when you're done with
+the proxy, of course,",676.44,1.56
+"change your proxy settings in
+Firefox. Just say no proxy for now.",678.0,3.51
+"And then if you go back to your terminal,",681.57,1.08
+"just hit C and your terminal's
+closed or not your terminal,",682.65,3.63
+"your tunnel is closed. The
+process is very similar on Ubuntu,",686.31,3.18
+"setting up my SSH tunnel and
+changing my proxy setting.",689.58,2.91
+"So I can do this globally inside of
+Ubuntu to where everything goes across it,",692.49,3.42
+"specifying local hosts and
+port 1, 3, 3, 7, that simple.",695.97,3.72
+"And launching Firefox. It's very
+clear that I am in Japan. Yeah,",699.75,3.75
+"very clearly in Japan. I love it. So
+those are the steps across the board.",703.53,3.57
+"Set up your SSH tunnel and then configure
+your proxy settings to look at your",707.13,3.21
+"local host. Now, that wasn't
+hard, right? It's kind of awesome.",710.34,2.76
+"Now it's time for the second way, and
+it's actually also not very hard at all.",713.14,3.48
+"This will involve setting up a Shadow
+SOX server, which will be our SOX proxy.",716.65,3.57
+"And then we'll also install a
+Shadow SOX client on our devices.",720.25,3.03
+"And you can install that pretty
+much anywhere. Windows, Mac, Linux,",723.46,2.61
+"and even your phone. And the
+server setup is stupid easy,",726.07,3.36
+"especially on anode because Anode has
+a marketplace and I can just go to the",729.46,4.11
+marketplace and search for shadow socks.,733.57,2.13
+They've got a little item here to set up.,735.73,1.92
+"All I have to do is put in my
+passwords, create a limited pseudo user,",737.68,3.03
+"a password for that user, and then
+region. Oh, another important thing to do.",741.01,3.75
+"Oh, I want to go to Mumbai. Yes,
+again, shared CPU lowest one,",744.85,3.48
+"five bucks a month. I'll call it Shadow
+socks. Mumbai, create a root password,",748.33,4.17
+"all the passwords here, and
+then click on create Leno.",752.8,2.97
+"It does everything for you. Little
+coffee break while it's Brewing Network.",755.86,3.09
+"chuck.coffee. Actually,
+while that's brewing,",758.95,1.74
+"have you hacked the YouTube algorithm
+today? Have you liked the video?",760.69,2.55
+"Hit subscribe. Hit that
+notification. Bell commented,",763.33,2.4
+"you got to hack YouTube
+today. Ethically, of course,",765.76,2.85
+"actually while it's provisioning. While
+it's brewing, we can install our client.",768.7,3.18
+"I will have links for this below. I'll
+just go to shadow socks on the interwebs,",771.91,4.02
+"go to their GitHub and I
+should be able to find, yeah,",776.14,2.16
+"shadow socks windows here, and go
+to their latest release. Again,",778.3,2.82
+"I'll link directly to this below. I'll
+download that zip extract it here,",781.12,3.3
+"and I'll run the EXE. And that's
+literally all we had to do.",784.54,2.55
+"Now it's waiting for our server settings,
+which are being set up right now.",787.18,2.67
+"Let's go check it on
+it. I think it is done.",790.06,1.32
+"I'm going to go ahead
+and grab my SSH access,",791.5,2.25
+"launch my terminal and jump into
+that server we're in and define our",793.84,3.33
+"configuration for the server. I'm
+going to use CAT to look at a file,",797.17,3.0
+"so the CAT command, and I'll look
+in ET c shadow socks. What is it?",800.17,3.9
+"Shadow Sox, liv.dev. Let's
+see what's there. Oh, there.",804.075,4.555
+"It's only one file config js O. Let's
+cat that. Cool. There's our config.",808.63,3.54
+"Now I do need my password to be hidden.
+Nick. Two things you want to point out.",812.38,3.27
+"Here's our server report, which is
+8,000 and our encryption method,",815.68,4.74
+"rather, AS 2 2 5 6 G cmm. Remember
+that? We're going to use that right now.",820.42,4.14
+"I'll just grab my server IP address
+and get back into Windows and put that",824.59,2.82
+"information in there. Ported 8,000.",827.41,1.53
+"My password for shadow stocks
+encryption is AS 2 56 GCM,",829.0,4.56
+"and that's all I have to do. Click
+on apply. Okay, now real quick,",833.65,3.63
+"I'm going to refresh. What's my IP
+address? I should be back in Texas,",837.28,2.52
+"back in good old Texas. So now I'm
+going to go to the bottom right.",839.8,2.55
+"I should have shadow
+stocks running in my tray.",842.38,3.03
+"I'm going to click on that or right click
+it. Go to system proxy and say Global.",845.77,4.02
+"You'll notice it'll turn. Is that
+blue? I don't know. I'm colorblind.",849.88,3.36
+"The proxy's on it's being used. So now
+if I refresh where I am, oh, there I am.",853.24,4.62
+"I had to open up Chrome
+actually, to get this to work.",857.98,1.98
+"Firefox isn't configured
+to use a proxy right now.",860.02,2.01
+"Chrome will use my system settings,
+and yet there I am in Mumbai.",862.48,2.91
+"That's pretty cool. And going to Google,",865.45,1.53
+"let's see if it changes to
+whatever that is. Is it Hendy?",867.04,2.94
+"I'm not sure what that is. Lemme know.
+I'm below guys. I'm not sure. Oh, sure.",870.1,2.49
+"There's a lot. They're offering
+languages. It's more than just Hendy,",872.595,3.055
+"I'm sure Hedy's in there. Now,",875.65,1.08
+"setting up the Shadow Socks client on
+every other device is pretty much the",876.73,3.54
+"same. Inputting your server, your port,
+your authentication, or I'm sorry,",880.27,3.63
+"your encryption method. And you can
+disable and enable it when you need to.",883.9,3.3
+"And it'll also be encrypting your
+traffic as well, which is kind of cool.",887.26,3.12
+"Combining the best of both
+worlds, VPN and proxy.",890.53,2.52
+"So I would love to know if you set
+up your own proxy, comment below.",893.11,3.12
+"And also I want to know your thoughts
+about Google Baking in a proxying into",896.29,3.36
+"their Chrome browser. I'm
+on the fence about it,",899.65,1.77
+"but I want to hear your
+thoughts. That's all I got.",901.425,1.915
+I'll catch you guys next time.,903.73,1.26

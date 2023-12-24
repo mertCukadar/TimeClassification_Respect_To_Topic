@@ -1,0 +1,264 @@
+Google wants to help you hide your IP
+address when you're surfing the internet, how they're baking in proxies into their
+Chrome browser. That's kind of weird, a little crazy. Actually. Chrome is
+calling it their IP protection feature, and it involves running their own proxy, which they're calling the
+privacy proxy private. As long as Google doesn't
+look at your stuff, we'll talk about that
+here in a bit. In fact, it's actually pretty easy to run your
+own proxy. I'll show you how to do that. Check the timestamps. It'll take
+about two minutes. But first, let's talk about proxies. They're great
+and they've been around for a long time, helping people hide their IP address
+and maintain a bit of privacy. But what is it? How does it
+work? When you visit a website, that website can see your IP address,
+which can tell them a lot about you. According to Google's own document. Your IP address makes it feasible to
+associate what you're doing with where you've been. And why that's
+dangerous is over time, all the information can be combined to
+create a unique persistent profile about you, and they can use that to
+track your activity across the web. And unlike cookies, which we can
+opt out of IP address tracking, it's more covert. You can't just
+opt out. It just kind of happens. So this is why people use proxies. A proxy is just a server that sits in
+the middle of the communication between you and the website. The proxy server will handle
+the communication between
+you and that website, and instead of the website
+seeing your IP address, it'll see the proxy server's
+IP address, hiding yours, preventing it from tracking you,
+learning you, knowing you, using you, and all that other creepy stuff. It's kind of like when you're
+in a fight with your friend Bob, and you'll want to tell him something,
+but you can't. You're mad at him, right? So you tell your friend
+Stacey to tell him, and then he tells your friend Stacey
+to tell you, yada, yada, yada. Stacey's a proxy. That's
+what I was trying to say. You can also use a proxy to travel
+the world. You want to be in France, put your proxy in France, and
+suddenly you're French or Stacey is. And because websites only see Stacey, they think you're French and
+you can access everything. The French internet has to
+offer all that geoblock content. But don't get too excited. Google isn't
+going to allow this with their proxy, but you can certainly do it with your
+own. Again, I'll show you how. Now, if you've seen enough VPN sponsored ads
+on YouTube, you're probably thinking, isn't this just AVPN? Are we
+talking about the same thing? No. While sharing similar goals, the main difference between AVPN and a
+proxy is AVPN will actually encrypt your data over a secure tunnel. While
+a proxy won't encrypt anything, they'll just forward it over not
+changing anything about your data. And because the proxy isn't
+worried about encrypting your data, it's typically much faster. Encryption
+takes time. It's a bit heavier. So when you think proxies think fast, and when you're thinking
+about hosting your own server, hosting a proxy server is much less
+resource intensive versus hosting a VP n server, which again
+has to encrypt traffic. But when we're talking about hiding your
+IP address, they both help you. Now, let's talk about Google running a proxy. Have you ever heard of a
+man in the middle attack? It's a hacking technique where a hacker
+will sit himself in the middle between you and the website
+you're trying to visit, and he tries to steal your information.
+He sees everything going back and forth. He can observe it and possibly take it. It sounds kind of like what
+Google's about to do, right? They're putting themselves in the
+middle of our traffic and they have the potential to. See everything. Now, I'm not
+saying Google is going to do that. I'm just saying the potential is created
+by doing that. And let's be honest, does Google really need to do that?
+They already see all of our traffic, but to put us at ease,
+according to the document, one of the core requirements of their
+privacy prox is that the proxy will not be privy to the contents of the
+traffic. So they're like, we're not going to look at it. Trust
+us. You know what I mean? And again, this does open up a ton of concerns,
+some that even Google recognizes. They're like, Hey, yeah, about
+that right here. The first concern, and this is a pretty big one, is what if the proxy server owned by
+Google that has all of our stuff going through it? What if it gets hacked?
+Think about it. If you're a hacker, suddenly you don't need to try and hack
+thousands, millions of individuals. All you got to do is hack one
+of Google's proxy servers, and you get all that information
+potentially. Another one
+is denial of service. What if the hacker doesn't
+want to steal the information? They just want to watch the world burn. So they will try to take down these
+Google proxies through a DDoS attacker distributed denial of service attack. And if everyone's using these proxies
+to go to the internet and access everything, that impacts stability
+of the entire internet. Now, sure, someone like me, and maybe you could
+figure it out and be like, yeah, that's because of that Google proxy.
+Let's just not use it for now. Other people won't realize
+that and they'll think, oh, I guess the internet died.
+You know what I mean? It's that single point of failure
+mentality. You don't want that. And then also going through Google Proxies
+could disrupt a lot of the defenses that we already have for online attacks. Google will effectively be changing the
+way the internet works by having a lot of people go through its proxies.
+I won't go deep into that, but just know it will change things.
+So to mitigate those concerns, they will require
+authentication to their proxy, which will require a Google account
+in which off tokens will be issued and redeemed at the proxy. They'll also be using blinded signatures
+so they can't identify your traffic and tie it to who you are.
+And to limit DDoS attacks, they'll be rate limiting tokens per
+account and having token expiry. I like saying the word
+expiry makes me feel British. And then one more thing here. This is
+actually kind of cool. So good job Google, and they are promising they're going
+to do it. It's in their roadmap, but they're considering, I hope it's more than a consideration
+using two hops for improved privacy. So right now, the proposed plan would be a Google
+owned proxy that we would all go through. Again, our concerns, see
+the concerns from earlier. They're talking about adding
+an extra hop, another proxy. So I'll have two total proxies
+between us and our website. And the second proxy will be run
+by someone else that's not Google, ACDN or a content delivery network.
+Maybe CloudFlare or Akamai. Google will still run the first hop, but the second will be
+someone else ensuring that
+neither proxy can see both the client IP address and the destination. Which is funny because this kind
+of sounds like the Onion Network, the Tor network, the dark web, and how they obscure our identities and
+keep people anonymous through multiple hops, onion relays. So I think this actually could be
+pretty cool as long as they take their consideration into action. We'll
+see. And then as I mentioned earlier, GOIP, one of the benefits of a proxy is that
+we can appear to be from anywhere in the world on the internet, which is
+pretty cool. Now it's Google's proxy. They're going to have to comply with
+local laws and regulation that have to do with content localization. So the privacy proxy will assign IP
+addresses that represent the user's course location or I guess approximate
+location, including their country. And they do have a document on
+their IP approach for IP protection. Here's what the map will
+look like, so I do get it. They do need to comply with laws, all
+the more reason to use your own proxy. So when can we expect to see
+this? How's it going to work? When will the world drastically
+change? With proxies, it's going to be a slow
+rollout, a phase approach. Initially it'll be opt-in only, so you'll have to actually turn the
+setting on yourself. And in phase zero, it'll be one single Google own proxy, and it will only proxy requests
+to Google owned domains. The test will only be
+US-based IP addresses, and only a small percentage of clients
+will be automatically enrolled into the initial test. And again, part of their security features is that
+a user must be logged in to Chrome in order to generate that user token
+to authenticate with a proxy. So currently in Google Chrome,
+we are in, we're in one 18, and we can expect to see this start
+happening between M one 19 and M 1 25, and there's the flag name for that
+particular setting. When it comes out. Be looking for that. Honestly, I'm kind of excited about this because
+Google is helping out with privacy. For most people, it's a good step because most people
+are not going to run their own proxy, but you're not like most people, you are
+going to run your own proxy right now. It's so crazy, so fast, let's do
+it. And come on. I mean, honestly, wouldn't you rather own your own
+proxy versus Google doing it for you? I want to own my own privacy, and I'm actually going to show
+you two ways to run a proxy. The first one is ridiculously easy. It's
+always been there right next to you. And the second one is more robust. It
+actually kind of operates like AVPN. It's a proxy, but it will also encrypt
+your traffic. It's called Shadow Socks, which kind of sounds like a superhero
+cat. I'm down for that. For both options, all you'll need is a Linux-based
+server. It doesn't even have to be big. It can be super tiny.
+And for my Linux server, because I want to be
+anywhere in the world, I'm going to spend mine up in the
+cloud with Anode by Akamai. Now, as you can see, I do run a ton
+of anode servers in the cloud. I use 'em for all my projects.
+Anyways, let's create one real quick. I'm going to run the latest version
+of Ubuntu that they offer and region. This is where it gets fun. Where am I
+going to be today? I want to be in Osaka. I'm actually going to Japan in about
+three weeks. Two weeks for a month. So I'm practicing. So I'll be in Osaka. I'll do the shared TPU and the smallest
+plan. They have just five bucks a month. I'll name it Japan Proxy, put a
+password in and click on Create. And within moments, I'll have my very
+own proxy server. The cloud in Japan, my Linux server is done brewing. I'm going
+to go ahead and access it real quick. Going to grab my SSH command, copy that.
+Launch my terminal here in Windows. It'll be the same in Mac and
+Linux. Paste that in, hit enter, accept all fingerprints. And we're in.
+Now, this is going to blow your mind. One of the best ways to run a
+proxy is just through having SSH. So what I just used to access the server,
+SSH or Secure Shell is the same thing. We'll use to set up a proxy.
+And when I say set up, I mean like it's done as long
+as you have open SSH installed, which if you access your server that
+way, it already is just to make sure, we'll try it out. APT
+install, open SSH dash server. See, mine's already installed. All
+you got to do is enter that command, see if it is. If it isn't,
+install it. We're good to go. Now that's all I have to do. I'm just
+going to set up my clients, my computers. So phone and computers, I dunno why
+I said that. I'll start with Windows. And here in Windows, I do recommend
+using Firefox with a proxy, mainly because I could not get
+it to work with anything else. So launching Firefox, let's just do
+a little test real quick. Let's do a, what's my IP address? Now, I'm not going to let you see it because
+my editor's going to blur it out, right Nick, but looking at
+what is my IP address.com, you can clearly see that I am in
+Dallas, Texas. What do you say? We changed that. Now our first step in setting up this
+proxy is establishing an SSH tunnel. So all we're going to do, it
+sounds scary, but it's not. We're going to launch our
+terminal here in Windows. So we'll use the SSH command.
+I told you it's all SSH, and we'll do the option dash or
+tick D, and we'll type in a port. We'll just do 1, 3, 3 7. What
+this is doing is powerful. It's opening up a SOX proxy, a
+proxy protocol. That is awesome. It'll do T-C-P-U-D-P, whatever you
+want. We'll then do a dash capital N, which is telling it to not execute remote
+commands. We're just forwarding ports. And then we'll do a dash capital C to
+compress the data over our tunnel to save bandwidth. And then finally, our proxy
+server. Now getting back to Lynn node, I'm going to grab my IP address of my
+proxy server, and I'll say my username, which is root at my proxy server. Now,
+let's go ahead and do this. Ready, set, go, hit enter, accept all
+fingerprints. Put your password in, and you're probably waiting like,
+okay, now what? Yeah, it's done. The tunnel's created. It's open.
+And with the tunnel created, now we're going to just tell our
+computer to use itself as a proxy. What? Let me show you. So here in Firefox,
+I'm going to go to settings. Let's go in my little dialogue here
+and go to settings and I'll search for proxy. There it is. Just click on
+proxy settings and network settings. And here I'm going to click
+on manual proxy configuration. And all I'm going to worry
+about is the SOX host. That's what we're running right now.
+There I'm going to type in local hosts, which means we're going to look
+at ourselves for the proxy, and we're going to tell the port
+that we just used 1, 3, 3 7. So we created the tunnel
+to our proxy server, and now we're telling our browser to use
+ourselves and go over that tunnel for internet. It'll make sense. Watch
+this. I'll click okay. And that's it. That's all we had to do. So now
+over here on what's my IP address? If I refresh this, we are
+in Japan. Do you see that? If I go to Google, I bet it'll put things
+in Japanese for me. Yep. Look at that. I am loving this. See, I just
+traveled across the world. And when you're done with
+the proxy, of course, change your proxy settings in
+Firefox. Just say no proxy for now. And then if you go back to your terminal, just hit C and your terminal's
+closed or not your terminal, your tunnel is closed. The
+process is very similar on Ubuntu, setting up my SSH tunnel and
+changing my proxy setting. So I can do this globally inside of
+Ubuntu to where everything goes across it, specifying local hosts and
+port 1, 3, 3, 7, that simple. And launching Firefox. It's very
+clear that I am in Japan. Yeah, very clearly in Japan. I love it. So
+those are the steps across the board. Set up your SSH tunnel and then configure
+your proxy settings to look at your local host. Now, that wasn't
+hard, right? It's kind of awesome. Now it's time for the second way, and
+it's actually also not very hard at all. This will involve setting up a Shadow
+SOX server, which will be our SOX proxy. And then we'll also install a
+Shadow SOX client on our devices. And you can install that pretty
+much anywhere. Windows, Mac, Linux, and even your phone. And the
+server setup is stupid easy, especially on anode because Anode has
+a marketplace and I can just go to the marketplace and search for shadow socks. They've got a little item here to set up. All I have to do is put in my
+passwords, create a limited pseudo user, a password for that user, and then
+region. Oh, another important thing to do. Oh, I want to go to Mumbai. Yes,
+again, shared CPU lowest one, five bucks a month. I'll call it Shadow
+socks. Mumbai, create a root password, all the passwords here, and
+then click on create Leno. It does everything for you. Little
+coffee break while it's Brewing Network. chuck.coffee. Actually,
+while that's brewing, have you hacked the YouTube algorithm
+today? Have you liked the video? Hit subscribe. Hit that
+notification. Bell commented, you got to hack YouTube
+today. Ethically, of course, actually while it's provisioning. While
+it's brewing, we can install our client. I will have links for this below. I'll
+just go to shadow socks on the interwebs, go to their GitHub and I
+should be able to find, yeah, shadow socks windows here, and go
+to their latest release. Again, I'll link directly to this below. I'll
+download that zip extract it here, and I'll run the EXE. And that's
+literally all we had to do. Now it's waiting for our server settings,
+which are being set up right now. Let's go check it on
+it. I think it is done. I'm going to go ahead
+and grab my SSH access, launch my terminal and jump into
+that server we're in and define our configuration for the server. I'm
+going to use CAT to look at a file, so the CAT command, and I'll look
+in ET c shadow socks. What is it? Shadow Sox, liv.dev. Let's
+see what's there. Oh, there. It's only one file config js O. Let's
+cat that. Cool. There's our config. Now I do need my password to be hidden.
+Nick. Two things you want to point out. Here's our server report, which is
+8,000 and our encryption method, rather, AS 2 2 5 6 G cmm. Remember
+that? We're going to use that right now. I'll just grab my server IP address
+and get back into Windows and put that information in there. Ported 8,000. My password for shadow stocks
+encryption is AS 2 56 GCM, and that's all I have to do. Click
+on apply. Okay, now real quick, I'm going to refresh. What's my IP
+address? I should be back in Texas, back in good old Texas. So now I'm
+going to go to the bottom right. I should have shadow
+stocks running in my tray. I'm going to click on that or right click
+it. Go to system proxy and say Global. You'll notice it'll turn. Is that
+blue? I don't know. I'm colorblind. The proxy's on it's being used. So now
+if I refresh where I am, oh, there I am. I had to open up Chrome
+actually, to get this to work. Firefox isn't configured
+to use a proxy right now. Chrome will use my system settings,
+and yet there I am in Mumbai. That's pretty cool. And going to Google, let's see if it changes to
+whatever that is. Is it Hendy? I'm not sure what that is. Lemme know.
+I'm below guys. I'm not sure. Oh, sure. There's a lot. They're offering
+languages. It's more than just Hendy, I'm sure Hedy's in there. Now, setting up the Shadow Socks client on
+every other device is pretty much the same. Inputting your server, your port,
+your authentication, or I'm sorry, your encryption method. And you can
+disable and enable it when you need to. And it'll also be encrypting your
+traffic as well, which is kind of cool. Combining the best of both
+worlds, VPN and proxy. So I would love to know if you set
+up your own proxy, comment below. And also I want to know your thoughts
+about Google Baking in a proxying into their Chrome browser. I'm
+on the fence about it, but I want to hear your
+thoughts. That's all I got. I'll catch you guys next time. 
