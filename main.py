@@ -2,6 +2,14 @@ from youtube_transcript_api import YouTubeTranscriptApi
 import pandas as pd
 import os
 
+def concanate_transcript(dataFrame):
+    concanated_transcript = ""
+    for i in range(len(dataFrame)):
+        # print(len(dataFrame))
+        # print(dataFrame["text"][i])
+        concanated_transcript += dataFrame["text"][i] + " "
+    return concanated_transcript
+
 video_url = "https://www.youtube.com/watch?v=JJ0St6OmTp0"
 
 def extract_video_id(url):
@@ -18,7 +26,6 @@ def extract_video_id(url):
 
 video_id = extract_video_id(video_url)
 
-print(video_id)
 
 # assigning srt variable with the list of dictionaries
 # obtained by the .get_transcript() function
@@ -36,6 +43,16 @@ dataframe = pd.DataFrame(data=srt)
 # save to Excel
 dataframe.to_excel(output_file_path, index=False, sheet_name=video_id, engine="openpyxl")
 
-print(f"Excel file saved to: {output_file_path}")
+#save to csv
+dataframe.to_csv("output.csv", index=False)
 
-print(dataframe)
+# print the success message
+# print(f"Excel file saved to: {output_file_path}")
+
+string = concanate_transcript(dataframe)
+
+# save to txt
+text_file = open("output.txt", "w")
+text_file.write(string)
+text_file.close()
+
